@@ -1,0 +1,100 @@
+:root {
+  --fs-100: 0.62rem;
+  --fs-200: 0.75rem;
+  --fs-300: 0.87rem;
+  --fs-400: 1.12rem;
+  --fs-500: 1.37rem;
+  --fs-600: 2rem;
+  --fs-700: 2.25rem;
+  --fs-800: 2.62rem;
+  --fs-900: 3rem;
+  --fs-1000: 3.5rem;
+  --fs-1100: 4rem;
+  --fs-1200: 4.5rem;
+  --fs-1300: 5rem;
+  --fs-1400: 5.5rem;
+  --fs-1500: 6rem;
+  --fs-1600: 6.5rem;
+  --fs-1700: 7rem;
+  --fs-1800: 7.5rem;
+  --fs-1900: 8rem;
+  --fs-2000: 8.5rem;
+  --fs-2100: 9rem;
+  --fs-2200: 9.5rem;
+  --fs-2300: 10rem;
+  --main-color: #ff6060;
+  --black-color: #333;
+  --white-color: #fff;
+  --light-gray-color: #d9d9d9;
+  --deep-black-color: #000;
+  --border-radius-small: 5px;
+  --border-radius-medium: 10px;
+  --border-radius-large: 25px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --fs-300: 0.75rem;
+    --fs-400: 1rem;
+    --fs-500: 1.12rem;
+    --fs-600: 1.25rem;
+    --fs-700: 1.37rem;
+    --fs-800: 2rem;
+    --fs-900: 2.25rem;
+    --fs-1000: 2.62rem;
+    --fs-1100: 3rem;
+    --fs-1200: 3.5rem;
+    --fs-1300: 4rem;
+    --fs-1400: 4.5rem;
+    --fs-1500: 5rem;
+    --fs-1600: 5.5rem;
+    --fs-1700: 6rem;
+    --fs-1800: 6.5rem;
+    --fs-1900: 7rem;
+    --fs-2000: 7.5rem;
+    --fs-2100: 8rem;
+    --fs-2200: 8.5rem;
+    --fs-2300: 9rem;
+    --fs-2400: 9.5rem;
+    --fs-2500: 10rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --fs-300: 0.62rem;
+    --fs-400: 0.75rem;
+    --fs-500: 0.87rem;
+    --fs-600: 1rem;
+    --fs-700: 1.12rem;
+    --fs-800: 1.75rem;
+    --fs-900: 2rem;
+    --fs-1000: 2.25rem;
+    --fs-1100: 2.62rem;
+    --fs-1200: 3rem;
+    --fs-1300: 3.5rem;
+    --fs-1400: 4rem;
+    --fs-1500: 4.5rem;
+    --fs-1600: 5rem;
+    --fs-1700: 5.5rem;
+    --fs-1800: 6rem;
+    --fs-1900: 6.5rem;
+    --fs-2000: 7rem;
+    --fs-2100: 7.5rem;
+    --fs-2200: 8rem;
+    --fs-2300: 8.5rem;
+    --fs-2400: 9rem;
+    --fs-2500: 9.5rem;
+    --fs-2600: 10rem;
+  }
+}
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+$container-padding-x: 1.5rem;

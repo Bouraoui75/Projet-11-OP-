@@ -1,0 +1,12 @@
+.containerAboutDropdown {
+    display: flex;
+    justify-content: center;
+
+    .containerDropdown {    
+        width: 70%;
+
+        @media (max-width: 830px) {
+            width: 100%;
+        }
+    }
+}

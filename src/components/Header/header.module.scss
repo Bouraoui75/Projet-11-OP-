@@ -1,0 +1,37 @@
+@import '../../../src/variables';
+
+header {
+    margin-bottom: 2rem;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .headerLogo {
+        height: 2.5rem;
+    }
+}
+
+.headerNav {
+    display: flex;
+
+    li {
+        margin-left: 2rem;
+
+        @media (max-width: 768px) {
+            margin-left: 1rem;
+            text-transform: uppercase;
+        }
+
+        a {
+            font-size: var(--fs-500);
+            font-weight: 500;
+
+            @media (max-width: 768px) {
+                font-size: var(--fs-200);
+            }
+        }
+    }
+}

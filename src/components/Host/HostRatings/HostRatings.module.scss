@@ -1,0 +1,15 @@
+.containerStars {
+  display: flex;
+
+  i {
+    font-size: var(--fs-600);
+  }
+
+  i.star {
+    color: var(--main-color);
+  }
+
+  i.emptyStar {
+    color: var(--light-gray-color);
+  }
+}

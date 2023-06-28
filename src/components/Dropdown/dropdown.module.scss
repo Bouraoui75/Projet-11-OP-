@@ -1,0 +1,45 @@
+@import '../../variables';
+
+.dropdownContainer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  
+  .dropdownWrap {
+    width: 100%;
+  }
+
+  .dropdownHeader,
+  .dropdownContainerContent {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .dropdownContainerContent {
+    background-color: #f6f6f6;
+    color: var(--main-color);
+    font-weight: 400;
+    padding: 15px 18px;
+    border-radius: 0 0 5px 5px;
+
+    .dropdownContent {
+      display: block;
+      width: 100%;
+      word-wrap: break-word;
+      font-size: var(--fs-300);
+    }
+    
+  }
+
+  .dropdownHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+    border-radius: var(--border-radius-small);
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+}

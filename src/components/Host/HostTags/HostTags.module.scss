@@ -1,0 +1,31 @@
+.tagContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+
+    @media (max-width: 480px) {
+        span {
+            border-radius: 5px;
+            font-size: var(--fs-300);
+            padding: 0 20px;
+            color: var(--white-color);
+        }
+    }
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--main-color);
+        border-radius: var(--border-radius-small);
+        font-size: var(--fs-300);
+        padding: 5px 10px;
+        color: var(--white-color);
+
+        @media (max-width: 830px) {
+            font-size: var(--fs-100);
+        }
+    }
+}

@@ -1,0 +1,61 @@
+@import './variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+    @media (max-width: 768px) {
+        font-weight: 400;
+    }
+}
+
+main {
+    min-height: 100vh;
+}
+
+html {
+    margin-top: 2rem;
+}
+
+body {
+    color: var(--black-color);
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--main-color);
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+a.active {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@mixin make-container($padding-x: $container-padding-x) {
+    /* width: 100%; */
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-right: $padding-x;
+    padding-left: $padding-x;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    @include make-container();
+}

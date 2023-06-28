@@ -1,0 +1,46 @@
+@import '../../../src/variables.scss';
+
+.notFoundContainer {
+  width: 100%;
+  transform: translateY(50%);
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .linkToHome {
+    font-size: var(--fs-400);
+    color: var(--main-color);
+  }
+
+  span {
+    color: var(--main-color);
+  }
+
+  .notFoundContainerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+
+    .errorIndicator {
+      font-size: 200px;
+      font-weight: 700;
+
+      @media (max-width: 480px) {
+        font-size: var(--fs-1800);
+        font-weight: 700;
+      }
+    }
+    
+    .errorMessage {
+      font-size: var(--fs-600);
+
+      @media (max-width: 480px) {
+        width: 90%;
+      }
+    }
+  }
+}

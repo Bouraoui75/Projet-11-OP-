@@ -1,0 +1,77 @@
+.hostContainer {
+  color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .ratingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media (max-width: 480px) {
+      width: 100%;
+      margin-top: 12px;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .profileContainer {
+    margin-bottom: 1rem;
+
+    span {
+      text-align: end;
+      display: flex;
+      justify-content: flex-end;
+      width: 20px;
+      margin-right: 10px;
+    }
+    
+    img {
+      width: 62px;
+      border-radius: 50%;
+
+      @media (max-width: 830px) {
+        width: 52px;
+      }
+
+      @media (max-width: 480px) {
+        width: 32px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      margin-bottom: 0;
+    }
+  }
+
+  .profileContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: var(--fs-400);
+  }
+
+
+  @media (max-width: 480px) {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .containerAccomodationInformation {
+    width: 100%;
+
+    .containerAccomodationInformationTitle {
+      h1 {
+        font-size: var(--fs-900);
+      }
+
+      h2 {
+        font-size: var(--fs-400);
+      }
+    }
+  }
+}

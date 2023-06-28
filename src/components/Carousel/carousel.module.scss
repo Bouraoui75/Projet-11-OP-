@@ -1,0 +1,42 @@
+.carouselContainer {
+  position: relative;
+  margin-bottom: 2rem;
+
+  img {
+    object-fit: cover;
+    height: 25rem;
+    width: 100%;
+    border-radius: var(--border-radius-large);
+
+    @media (max-width: 480px) {
+      height: 255px;
+      border-radius: var(--border-radius-medium);
+    }
+  }
+
+  .arrowContainer {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    
+    .arrow {
+      cursor: pointer;
+      color: var(--white-color);
+      font-size: var(--fs-800);
+    }
+  }
+
+  .indexContainer {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    font-size: var(--fs-500);
+    text-align: center;
+    color: var(--white-color);
+  }
+}
